@@ -25,20 +25,29 @@
           crossorigin="anonymous"
         ></script>
 
-
         <center>
           <h1></h1>
         </center>
         <style type="text/css">
 
-             #mynetwork {
-                 width: 1500px;
-                 height: 1050px;
-                 background-color: #222222;
-                 border: 1px solid lightgray;
-                 position: relative;
-                 float: left;
+             body {
+                 background: linear-gradient(135deg, #1a1a2e, #16213e);
+                 color: #fff;
+                 font-family: 'Poppins', sans-serif;
+                 text-align: center;
              }
+
+             #mynetwork {
+                 width: 100%;
+                 max-width: 1200px;
+                 height: 700px;
+                 background: #111;
+                 border-radius: 10px;
+                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                 margin: auto;
+             }
+
+             
 
              
              #loadingBar {
@@ -119,11 +128,14 @@
 
 
     <body>
-        <div class="card" style="width: 100%">
-            
-            
-            <div id="mynetwork" class="card-body"></div>
+        <div class="container mt-4">
+            <h2 class="text-warning">Explore Westeros Connections</h2>
+            <p class="lead">A dynamic network of Game of Thrones characters.</p>
+            <div class="d-flex justify-content-center">
+                <div id="mynetwork"></div>
+            </div>
         </div>
+        
 
         
             <div id="loadingBar">
@@ -254,5 +266,9 @@
               }
               drawGraph();
         </script>
+        <footer class="mt-5 text-center text-light p-3" style="background: #222;">
+            <p>Created by Arne Wiese</p>
+        </footer>
+        
     </body>
 </html>
